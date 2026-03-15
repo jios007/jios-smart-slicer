@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "allowJs": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "ES6",
+    "sourceMap": true,
+    "outDir": "dist",
+    "moduleResolution": "Node",
+    "declaration": true,
+    "lib": ["es2015", "dom", "ES2015.Iterable"],
+    "strict": false
+  },
+  "files": ["src/visual.ts"]
+}

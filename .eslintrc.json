@@ -1,0 +1,16 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "plugins": ["powerbi-visuals"],
+  "extends": ["plugin:powerbi-visuals/recommended"],
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "rules": {
+    "powerbi-visuals/no-banned-terms": "error",
+    "powerbi-visuals/no-http-requests": "error"
+  }
+}

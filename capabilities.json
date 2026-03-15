@@ -1,0 +1,89 @@
+{
+  "dataRoles": [
+    {
+      "displayName": "Fält",
+      "name": "category",
+      "kind": "Grouping",
+      "description": "Välj kategorifält för JIOS Smart Slicer"
+    }
+  ],
+  "dataViewMappings": [
+    {
+      "conditions": [
+        { "category": { "max": 1 } }
+      ],
+      "categorical": {
+        "categories": {
+          "select": [{ "for": { "in": "category" } }],
+          "dataReductionAlgorithm": { "top": { "count": 10000 } }
+        }
+      }
+    }
+  ],
+  "objects": {
+    "general": {
+      "displayName": "General",
+      "properties": {
+        "filter": {
+          "type": { "filter": true }
+        }
+      }
+    },
+    "slicerSettings": {
+      "displayName": "Slicer Settings",
+      "properties": {
+        "showOnlySelected": {
+          "displayName": "Show Only Selected",
+          "type": { "bool": true }
+        },
+        "showSearch": {
+          "displayName": "Show Search Box",
+          "type": { "bool": true }
+        },
+        "multiSelect": {
+          "displayName": "Multi-Select",
+          "type": { "bool": true }
+        }
+      }
+    },
+    "appearance": {
+      "displayName": "Appearance",
+      "properties": {
+        "fontSize": {
+          "displayName": "Font Size",
+          "type": { "numeric": true }
+        },
+        "itemHeight": {
+          "displayName": "Item Height (px)",
+          "type": { "numeric": true }
+        },
+        "selectedColor": {
+          "displayName": "Selected Color",
+          "type": { "fill": { "solid": { "color": true } } }
+        },
+        "textColor": {
+          "displayName": "Text Color",
+          "type": { "fill": { "solid": { "color": true } } }
+        },
+        "backgroundColor": {
+          "displayName": "Background Color",
+          "type": { "fill": { "solid": { "color": true } } }
+        },
+        "borderColor": {
+          "displayName": "Border Color",
+          "type": { "fill": { "solid": { "color": true } } }
+        }
+      }
+    }
+  },
+  "supportsHighlight": false,
+  "sorting": {
+    "implicit": {
+      "clauses": [
+        { "role": "category", "direction": 1 }
+      ]
+    }
+  },
+  "advancedEditModeSupport": 0,
+  "privileges": []
+}

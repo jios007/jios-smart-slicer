@@ -1,0 +1,30 @@
+{
+  "visual": {
+    "name": "JIOSSmartSlicer",
+    "displayName": "JIOS Smart Slicer",
+    "guid": "JIOSSmartSlicerA1B2C3D4E5F6",
+    "visualClassName": "SmartSlicer",
+    "version": "1.0.0.0",
+    "description": "En kraftfull slicer som döljer ovalda objekt och stödjer snabbsökning, Comma Separated, Responsive, Wrap Text. Utvecklad av Jivan Osman.",
+    "supportUrl": "https://github.com/jivan-osman/jios-visuals",
+    "gitHubUrl": "https://github.com/jivan-osman/jios-visuals"
+  },
+  "apiVersion": "5.3.0",
+  "author": {
+    "name": "Jivan Osman",
+    "email": "jivan.osman@jios.se"
+  },
+  "assets": {
+    "icon": "assets/icon.png",
+    "iconDark": "assets/icon_dark.png"
+  },
+  "stringResources": [],
+  "capabilities": "capabilities.json",
+  "content": {
+    "js": "dist/visual.js",
+    "css": "style/visual.css",
+    "iconBase64": ""
+  },
+  "externalJS": [],
+  "style": "style/visual.less"
+}
